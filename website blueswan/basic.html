@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #111827;
+			font-size: large;
+			color: white;
+		}
+
+		.hero {
+			background-color: #374151;
+			border: 2px black solid;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			margin: 2rem;
+			padding: 2rem;
+			justify-content: space-around;
+		}
+
+		.hero div{
+			display: flex;
+			flex-direction: row;
+			margin: auto;
+		}
+
+		form {
+			display: flex;
+			flex-direction: row;
+			margin: auto;
+			width: 80%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			/* width: 38rem; */
+			height: 20rem;
+			border-radius: 1rem;
+			margin: 1rem;
+		}
+
+		input,
+		textarea {
+			margin: 1rem;
+			padding: 1rem;
+			height: 1rem;
+			width: 40%;
+			border-radius: 1rem;
+			border: none;
+		}
+
+		button {
+			width: 8rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: 1rem;
+			border: none;
+			color: white;
+			background-color: #1d4ed8;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			display: flex;
+			margin: 2rem auto;
+			cursor: pointer;
+		}
+
+		#currScore {
+			display: flex;
+			margin: auto;
+			color: white;
+		}
+
+
+		.trow {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+			font-size: 1.2rem;
+			margin: 10px 0;
+		}
+
+		.trow div {
+			width: 100%;
+			text-align: center;
+		}
+
+		.hero .choose{
+			width:50%;
+		}
+
+		.hero .submit{
+			width:20%;
+			height: 10px;
+		}
+
+		.hero img{
+			width: 1000px;
+			height: 500px;
+		}
+	</style>
+	<title>Textify</title>
+</head>
+
+<body>
+
+	<div class="hero">
+		<div class="choose">
+			<form action="/" method="post">
+				<input type="file" name="filename" id="myFile"/>
+				<button type="submit">Submit</button>
+				
+			</form>
+		</div>
+		<!-- <div class="submit">
+			<form action="/" method="post">
+				<input type="submit">
+			</form>
+		</div> -->
+
+		<div>
+				<img src="static/foo.jpg" width="1200" height="600" alt="" />
+		</div>
+
+	</div>
+
+</body>
+
+</html>
